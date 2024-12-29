@@ -1,5 +1,5 @@
-# PAP-SVM
-An SVM Classifier for Screening Pore-forming Antimicrobial Peptides (ver.2024)
+# Pore-Forming_AMP_SVM
+An SVM Classifier for Screening Pore-Forming Antimicrobial Peptides (2024 ver.)
 
 ## Requirements
 * thundersvm
@@ -18,7 +18,11 @@ python train_val.py
 python train_10fold.py
 ```
 
-### For predicting (or screening from new seqs)
+### For predicting/screening
 ```bash
 python predict.py
 ```
+* Note: The length of input peptide should not be longer than 40 amino acids.
+
+## Citation
+To be updated
