@@ -1,9 +1,9 @@
 # PAP-SVM
-An SVM Classifier for Screening Perforated Antimicrobial Peptides (2024 modified)
+An SVM Classifier for Screening Pore-forming Antimicrobial Peptides (ver.2024)
 
 ## Requirements
 * thundersvm
-* prot_bert_bfd (from transformers)
+* transformers (for prot_bert_bfd)
 * torch
 * sklearn
 
