@@ -1,0 +1,4 @@
+numpy
+matplotlib
+pickleshare
+tensorflow==1.7.0
