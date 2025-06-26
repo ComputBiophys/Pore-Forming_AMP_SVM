@@ -11,7 +11,7 @@ An SVM Classifier for Screening Pore-Forming Antimicrobial Peptides (2024 ver.)
 * pickleshare
 * tensorflow==1.7.0
 
-## Usage
+## Usage （SVM predictor）
 ### For independent training/validation
 ```bash
 python train_val.py
@@ -28,6 +28,11 @@ python predict.py
 ```
 * Note: The length of input peptide should not be longer than 40 amino acids.
 
+## Usage （MCP predictor and CM predictor）
+### Requirements (Python 3.6)
+```bash
+pip install -r requirements.txt
+```
 
 ### Feature generation
 
