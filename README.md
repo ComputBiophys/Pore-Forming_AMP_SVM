@@ -47,6 +47,7 @@ python MCPpep_predictor.py ./example test
 ```bash
 python CMpep_predictor.py ./example test
 ```
+* Note: The complete parameter files can be downloaded at https://disk.pku.edu.cn/link/AA90CAA6C9568B4E809BE5FFCFD95381E7.
 
 ### Inter-chain CM plot
 ```bash
