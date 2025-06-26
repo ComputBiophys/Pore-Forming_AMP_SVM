@@ -6,6 +6,10 @@ An SVM Classifier for Screening Pore-Forming Antimicrobial Peptides (2024 ver.)
 * transformers (for prot_bert_bfd)
 * torch
 * sklearn
+* numpy
+* matplotlib
+* pickleshare
+* tensorflow==1.7.0
 
 ## Usage
 ### For independent training/validation
@@ -23,6 +27,26 @@ python train_10fold.py
 python predict.py
 ```
 * Note: The length of input peptide should not be longer than 40 amino acids.
+
+
+### Feature generation
+
+* Note: Input features from SPIDER3-Single (Heffernan, R, et al. J Comput Chem. 2018)
+
+### MCP prediction
+```bash
+python MCPpep_predictor.py ./example test
+```
+
+### CM prediction
+```bash
+python CMpep_predictor.py ./example test
+```
+
+### Inter-chain CM plot
+```bash
+python plot_dimer.py test
+```
 
 ## Citation
 To be updated
