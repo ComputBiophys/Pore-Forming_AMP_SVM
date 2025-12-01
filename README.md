@@ -1,17 +1,19 @@
 # Pore-Forming_AMP_SVM
-An SVM Classifier for Screening Pore-Forming Antimicrobial Peptides (2024 ver.)
+Codes for *Mechanism-Driven Screening of Membrane-Targeting and Pore-Forming Antimicrobial Peptides*
 
 ## Requirements
+### SVM
 * thundersvm
 * transformers (for prot_bert_bfd)
 * torch
 * sklearn
+### MCP and CM predictors
 * numpy
 * matplotlib
 * pickleshare
-* tensorflow==1.7.0
+* tensorflow==1.7.0 (if you are using tensorflow 2, please modify the script with 'import tensorflow.compat.v1 as tf')
 
-## Usage （SVM predictor）
+## Usage for SVM
 ### For independent training/validation
 ```bash
 python train_val.py
@@ -28,15 +30,14 @@ python predict.py
 ```
 * Note: The length of input peptide should not be longer than 40 amino acids.
 
-## Usage （MCP predictor and CM predictor）
-### Requirements (Python 3.6)
+## Usage for MCP and CM predictors
+### Requirements
 ```bash
 pip install -r requirements.txt
 ```
 
 ### Feature generation
-
-* Note: Input features from SPIDER3-Single (Heffernan, R, et al. J Comput Chem. 2018)
+* Input features are generated from SPIDER3-Single (Heffernan, R. et al., *J Comput Chem* 2018). [Download](https://zhouyq-lab.szbl.ac.cn/download/)
 
 ### MCP prediction
 ```bash
@@ -47,7 +48,7 @@ python MCPpep_predictor.py ./example test
 ```bash
 python CMpep_predictor.py ./example test
 ```
-* Note: The complete parameter files can be downloaded at https://disk.pku.edu.cn/link/AA90CAA6C9568B4E809BE5FFCFD95381E7.
+* Note: The complete parameter files can be downloaded at [here](https://drive.google.com/file/d/1Ekc-NNp6jq2DoJapQLmLtv1CtpxxRTCc/view?usp=sharing).
 
 ### Inter-chain CM plot
 ```bash
@@ -55,4 +56,13 @@ python plot_dimer.py test
 ```
 
 ## Citation
-To be updated
+```
+@article{Li2025AMP,
+  author = {Li, Jiaxuan and Yang, Chenguang and Dong, Ruihan and Juarez, Juan Francisco Bada and Wang, Lei and Wettstein, Maximilian Emanuel and Wang, Dali and Cao, Chan and Lu, Ying and Song, Chen},
+  title = {Mechanism-Driven Screening of Membrane-Targeting and Pore-Forming Antimicrobial Peptides},
+  journal = {Advanced Science},
+  pages = {e16470},
+  doi = {https://doi.org/10.1002/advs.202516470},
+  year = {2025}
+}
+```
