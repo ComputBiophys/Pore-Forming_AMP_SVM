@@ -29,6 +29,7 @@ python train_10fold.py
 python predict.py
 ```
 * Note: The length of input peptide should not be longer than 40 amino acids.
+* The model weight can be downloaded [here](https://disk.pku.edu.cn/link/AA87F234B8B573491CB7648B498438E6B9) (Pickup Code: gNq1).
 
 ## Usage for MCP and CM predictors
 ### Requirements
